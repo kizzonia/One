@@ -13,7 +13,7 @@ namespace OneMessage
         {
             InitializeComponent();
 
-            MainPage = new OneMessage.MainPage();
+            MainPage = new Nav();
         }
 
         protected override void OnStart()

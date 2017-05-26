@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OneMessage.NavMaster"
+             Title="Master">
+  <StackLayout>
+    <ListView x:Name="ListViewMenuItems"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}"
+        BackgroundColor="#3F51B5"
+               >
+            <ListView.Header>
+                <StackLayout HeightRequest="200"
+                             >
+                    <Image Aspect="AspectFill" VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" Source="over.png"></Image>
+                </StackLayout>
+            </ListView.Header>
+      <ListView.ItemTemplate
+          >
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+              <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" 
+                    Text="{Binding Title}" 
+                    TextColor="#FFF"
+                    FontSize="24"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>
