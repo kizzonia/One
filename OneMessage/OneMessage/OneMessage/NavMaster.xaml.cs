@@ -33,7 +33,7 @@ namespace OneMessage
             {
                 MenuItems = new ObservableCollection<NavMenuItem>(new[]
                 {
-                    new NavMenuItem { Id = 0, Title = "Page 1" },
+                    new NavMenuItem { Id = 0, Title = "Home", Icon="home", TargetType = typeof(Home) },
                     new NavMenuItem { Id = 1, Title = "Page 2" },
                     new NavMenuItem { Id = 2, Title = "Page 3" },
                     new NavMenuItem { Id = 3, Title = "Page 4" },

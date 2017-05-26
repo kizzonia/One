@@ -21,6 +21,22 @@
           >
         <DataTemplate>
           <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal" Padding="20,4,10,4" HorizontalOptions="FillAndExpand">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20" />
+                                        <ColumnDefinition Width="10" />
+                                        <ColumnDefinition Width="30" />
+                                        <ColumnDefinition Width="*" />
+                                        
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Source="{Binding Icon}" />
+                                    <Label Grid.Column="2" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" />
+                                </Grid>
+                                <!-- <Image Source="angle" VerticaalOptions="Center" HorizontalOptions-"EndAndExpand" />-->
+                            </StackLayout>
+                        </ViewCell.View>
             <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
               <Label VerticalOptions="FillAndExpand" 
                     VerticalTextAlignment="Center" 
